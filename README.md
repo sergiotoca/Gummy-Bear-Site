@@ -1,6 +1,6 @@
 # Gummy-Bear-Site
 
-#About
+# # About
 
 This repository is a collection of HTML and CSS code for a website that showcases gummi bears.
 
