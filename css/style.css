@@ -1,0 +1,299 @@
+/* Global styles */
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Header styles */
+
+header {
+  background: #c41f0e;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+/* Navigation styles */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: 'Fredoka One', cursive;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+nav li {
+  
+  margin-right: 20px;
+}
+
+nav a {
+  width: 160px;
+  height: auto;
+  border: 4px solid #f7f7f7;
+  border-radius: 30px;
+  background: #0e102774;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: block;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+
+nav a:hover {
+  background-color: #0e58c4;
+  border-radius: 40px;
+  border-width: 8px;
+  font-size: 28px;
+  color: #0ec47a;
+  transition: all 0.4s ease;
+
+}
+
+nav ul li:nth-child(2) a:hover{
+  background-color: #ffd900;
+  color: #0e58c4;
+}
+
+nav ul li:nth-child(3) a:hover{
+  background-color: #0ec47a;
+  color: #0e58c4;
+}
+
+
+/* Image styles */
+
+img {
+  max-width: 100%;
+}
+
+/* Section styles */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+/* Advertise Row styles */
+
+.ad {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.ad a{
+  text-decoration: none;
+}
+
+
+
+/*2 ads styles*/
+
+.ads-2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  text-align: center;
+}
+
+.ads-2 a{
+  
+  }
+
+/*images styles*/
+.recipe{
+  background-image: url("/img/gummi-bears.jpg");
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.recipe img{
+  max-width: 100%;
+}
+
+.recipe .mask-recipe{
+  border-radius: 50%;
+  background-color: rgba(255,52,30,.7);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all linear .30s;
+  height: 100%;
+  width: 300px;
+
+}
+
+.recipe .mask-recipe h3{
+  color: #f4f4f4;
+  font-size: 28px;
+  width:max-content;
+}
+
+.recipe .mask-recipe:hover{
+  opacity: 1;
+
+}
+
+.history{
+  background-image: url("/img/History-bears -768x512.jpg");
+  background-size:600px 400px;
+  background-repeat: no-repeat;
+  height:400px;
+  border-radius: 50px;
+  
+}
+
+.history .mask-history{
+  border-radius: 50px;
+  background-color: rgba(255,52,30,.7);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width: 600px;
+  transition: all linear .30s;
+
+}
+
+.history .mask-history h3{
+  color: #f4f4f4;
+  font-size: 28px;
+}
+
+.history .mask-history:hover{
+  opacity: 1;
+
+}
+
+/* Footer styles */
+
+footer {
+  background: #0e1027;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Bubblegum Sans", sans-serif;
+}
+
+footer img {
+  max-width: 200px;
+}
+
+/* Form styles */
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background: #f9b1b1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+  background: #d28989; 
+  }
+
+/* Liquid layout */
+
+@media only screen and (max-width: 960px) {
+  .container {
+  max-width: 100%;
+  padding: 0 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav li {
+    
+    margin-right: auto;
+  }
+
+  nav a {
+    width: auto;
+    height: auto;
+    border: 4px solid #f7f7f7;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    font-size: 18px;
+    border-width: 6px;  
+  }
+
+
+}
